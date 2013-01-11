@@ -1,4 +1,7 @@
 @charset "IBM437";
+.opacity-zero {
+  opacity: 0; }
+
 @font-face {
   font-family: "DroidNaskh-Regular";
   src: url("file:///D:/WebstormProjects/WebAshpaz/fonts/DroidNaskh-Regular.eot");
@@ -14,11 +17,10 @@ body {
   padding: 0;
   font-family: "DroidNaskh-Regular", B Mitra;
   font-size: 20px;
-  background: pink; }
+  background: #ba4b58; }
 
 a#description-slider {
   display: block;
-  width: 100px;
   background: #199eec;
   cursor: pointer;
   cursor: hand;
@@ -85,16 +87,21 @@ aside#main-steps {
   position: absolute;
   right: 0;
   bottom: 0;
-  top: 181px;
+  top: 180px;
   background: #333333; }
   aside#main-steps a {
     display: block;
     width: 150px;
-    height: 50px;
     text-align: center;
-    color: white; }
+    color: white;
+    cursor: pointer;
+    cursor: hand;
+    margin-bottom: 10px;
+    padding: 15px 0; }
+  aside#main-steps a#meat {
+    background: #ba4b58; }
 
-section#main form ul {
+section#main ul {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -104,18 +111,19 @@ section#main form ul {
   padding-top: 160px;
   list-style-type: none;
   z-index: -100; }
-  section#main form ul h2:after {
+  section#main ul h2:after {
     content: ":"; }
-  section#main form ul li {
+  section#main ul li {
     display: inline-block;
-    width: 100px;
+    width: 150px;
     height: 50px;
     background: rgba(0, 0, 0, 0.2);
     text-align: center;
     padding: 50px;
     margin-top: 5px;
     cursor: pointer; }
-  section#main form ul li.selected {
-    background: rgba(0, 0, 0, 0.4); }
-section#main form ul:not(.active) {
+  section#main ul li.selected {
+    background: rgba(0, 0, 0, 0.4);
+    color: white; }
+section#main ul:not(.active) {
   display: none; }

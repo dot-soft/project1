@@ -3,11 +3,15 @@ $header-height: 140px
 $headerBg: #333
 $about-height: 100px
 $steps-width: 150px
-$meat: pink
-$bread: #ffda62
-$vegetables: #6dd83c
-$nuts: brown
+$meat: #ba4b58
+$bread: #d5b146
+$vegetables: #5fbf35
+$nuts: #c06c12
+$results: brown
 
+
+.opacity-zero
+  opacity: 0
 
 @font-face
   font-family: 'DroidNaskh-Regular'
@@ -29,7 +33,6 @@ body
 
 a#description-slider
   display: block
-  width: 100px
   background: $blue
   cursor: pointer
   cursor: hand
@@ -105,47 +108,53 @@ aside#main-steps
   position: absolute
   right: 0
   bottom: 0
-  top: $header-height+41
+  top: $header-height+40
   background: $headerBg
 
   a
     display: block
     width: $steps-width
-    height: 50px
     text-align: center
     color: #fff
+    cursor: pointer
+    cursor: hand
+    margin-bottom: 10px
+    padding: 15px 0
+
+  a#meat
+    background: $meat
 
 section#main
-  form
-    ul
-      position: absolute
-      top: 0
-      bottom: 0
-      left: 0
-      right: $steps-width
-      padding: 60px
-      padding-top: $header-height+20
-      list-style-type: none
-      z-index: -100
+  ul
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: $steps-width
+    padding: 60px
+    padding-top: $header-height+20
+    list-style-type: none
+    z-index: -100
 
-      h2:after
-        content: ":"
+    h2:after
+      content: ":"
 
-      li
-        display: inline-block
-        width: 100px
-        height: 50px
-        background: rgba(0,0,0,0.2)
-        text-align: center
-        padding: 50px
-        margin-top: 5px
-        cursor: pointer
+    li
+      display: inline-block
+      width: 150px
+      height: 50px
+      background: rgba(0,0,0,0.2)
+      text-align: center
+      padding: 50px
+      margin-top: 5px
+      cursor: pointer
 
-      li.selected
-        background: rgba(0,0,0,0.4)
+    li.selected
+      background: rgba(0,0,0,0.4)
+      color: #fff
 
-    ul:not(.active)
-      display: none
+  ul:not(.active)
+    display: none
 
 
 
