@@ -1,0 +1,151 @@
+$blue: #199eec
+$header-height: 140px
+$headerBg: #333
+$about-height: 100px
+$steps-width: 150px
+$meat: pink
+$bread: #ffda62
+$vegetables: #6dd83c
+$nuts: brown
+
+
+@font-face
+  font-family: 'DroidNaskh-Regular'
+  src: url('file:///D:/WebstormProjects/WebAshpaz/fonts/DroidNaskh-Regular.eot')
+  src: local('☺'),url('file:///D:/WebstormProjects/WebAshpaz/fonts/DroidNaskh-Regular.woff') format('woff'),url('file:///D:/WebstormProjects/WebAshpaz/fonts/DroidNaskh-Regular.ttf') format('truetype')
+
+a, a:visited
+  text-decoration: none
+  color: inherit
+
+body
+  direction: rtl
+  margin: 0
+  padding: 0
+  font-family: 'DroidNaskh-Regular', B Mitra
+  font-size: 20px
+  background: $meat
+
+
+a#description-slider
+  display: block
+  width: 100px
+  background: $blue
+  cursor: pointer
+  cursor: hand
+  position: absolute
+  top: 0
+  left: 100px
+  text-align: center
+  padding: 2px 10px
+
+
+article#about-web-ashpaz
+  width: 100%
+  position: absolute
+  top: 0
+  display: none
+  height: $about-height
+
+
+header
+  background: $headerBg
+  color: #fff
+  padding: 20px
+  margin: 0
+  height: $header-height
+  z-index: 2000
+
+  #logo
+    width: 120px
+    height: 130px
+    background: $blue url("../images/logo.png") center right no-repeat
+    border: 1px white solid
+    float: right
+    margin: 0
+
+    nav
+      margin-right: 140px
+      width: 700px
+      margin-top: 57px
+      visibility: hidden
+
+      a
+        display: inline-block
+        width: 100px
+        text-align: center
+
+  a#navigation-slider
+    display: block
+    float: right
+    margin-top: 60px
+    content: ""
+    width: 12px
+    height: 15px
+    background-color: transparent
+    background-image: url("../images/left-arrow.png")
+    cursor: pointer
+    cursor: hand
+    padding: 0
+
+  #title
+    visibility: visible
+    padding-right: 200px
+
+    h1
+      margin: 0
+      color: lighten($blue, 10%)
+
+    p
+      margin: 0
+      color: lighten($headerBg, 50%)
+
+aside#main-steps
+  width: $steps-width
+  position: absolute
+  right: 0
+  bottom: 0
+  top: $header-height+41
+  background: $headerBg
+
+  a
+    display: block
+    width: $steps-width
+    height: 50px
+    text-align: center
+    color: #fff
+
+section#main
+  form
+    ul
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: $steps-width
+      padding: 60px
+      padding-top: $header-height+20
+      list-style-type: none
+      z-index: -100
+
+      h2:after
+        content: ":"
+
+      li
+        display: inline-block
+        width: 100px
+        height: 100px
+
+    ul:not(.active)
+      display: none
+
+
+
+
+
+
+
+
+
+
+
