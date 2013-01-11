@@ -109,6 +109,13 @@ section#main form ul {
   section#main form ul li {
     display: inline-block;
     width: 100px;
-    height: 100px; }
+    height: 50px;
+    background: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 50px;
+    margin-top: 5px;
+    cursor: pointer; }
+  section#main form ul li.selected {
+    background: rgba(0, 0, 0, 0.4); }
 section#main form ul:not(.active) {
   display: none; }
