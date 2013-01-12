@@ -17,7 +17,8 @@ body {
   padding: 0;
   font-family: "DroidNaskh-Regular", B Mitra;
   font-size: 20px;
-  background: #ba4b58; }
+  background: brown;
+  overflow: hidden; }
 
 a#description-slider {
   display: block;
@@ -99,37 +100,47 @@ aside#main-steps {
     margin-bottom: 10px;
     padding: 15px 0; }
   aside#main-steps a#meat {
-    background: #ba4b58; }
+    background: brown; }
 
 section {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: -25px;
   right: 150px;
   padding: 60px;
   padding-top: 160px;
-  list-style-type: none; }
-  section div {
+  list-style-type: none;
+  overflow-y: scroll;
+  z-index: -100; }
+  section div, section a.next {
     display: inline-block;
     width: 150px;
-    height: 50px;
+    padding: 60px 10px;
     background: rgba(0, 0, 0, 0.2);
     text-align: center;
-    padding: 50px;
     margin-top: 5px;
     cursor: pointer; }
   section div.selected {
     background: rgba(0, 0, 0, 0.4);
     color: white; }
+  section a.next {
+    background: transparent url("../images/next-arrow.png");
+    text-align: right;
+    opacity: 0.5; }
+    section a.next:hover {
+      opacity: 0.8; }
 
 section:not(.active) {
   display: none; }
 
 section#results-list header {
-  background: transparent; }
+  background: transparent;
+  color: black;
+  margin-bottom: 100px; }
   section#results-list header ul#selected-items {
-    list-style-type: none; }
+    list-style-type: none;
+    padding-right: 0; }
     section#results-list header ul#selected-items li {
       display: inline-block;
       padding: 0 5px;
@@ -145,8 +156,10 @@ section#results-list header {
     section#results-list header ul#selected-items li:hover {
       background: rgba(0, 0, 0, 0.4);
       color: white; }
-  section#results-list header input {
-    margin-right: 40px;
+  section#results-list header label {
+    margin-right: 0px; }
+  section#results-list header input#add-items {
+    margin-right: 10px;
     background: rgba(0, 0, 0, 0.2);
     border: 0;
     color: white;
@@ -155,16 +168,20 @@ section#results-list header {
     padding: 5px;
     font-family: "DroidNaskh-Regular";
     font-size: 20px; }
-  section#results-list header:focus {
+  section#results-list header input:focus {
     outline-color: black; }
+section#results-list > h2 {
+  margin-right: 20px;
+  margin-top: 50px; }
 section#results-list article {
   background: rgba(0, 0, 0, 0.4);
-  margin-top: 30px;
+  margin-bottom: 30px;
   padding: 20px 20px 10px 10px;
   color: white; }
   section#results-list article img.food-thumb {
     float: right;
-    margin-left: 30px; }
+    margin-left: 30px;
+    border: 1px solid white; }
   section#results-list article ul {
     list-style-type: none; }
     section#results-list article ul li {
@@ -183,3 +200,24 @@ section#results-list article {
     cursor: hand; }
     section#results-list article a.more:hover {
       background: rgba(0, 0, 0, 0.7); }
+section#results-list aside#filters {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2); }
+  section#results-list aside#filters label {
+    margin-right: 10px; }
+  section#results-list aside#filters select {
+    margin: 10px;
+    background: rgba(0, 0, 0, 0.2) url("../images/down-arrow.png") center left no-repeat;
+    border: 0;
+    color: white;
+    height: 50px;
+    width: 200px;
+    padding-right: 10px;
+    padding-top: 0;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    font-family: "DroidNaskh-Regular";
+    font-size: 20px; }
+    section#results-list aside#filters select option {
+      background: #ff8e00; }

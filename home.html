@@ -45,7 +45,7 @@
     <a id="results">نتایج</a>
 </aside>
 
-<section id="meat-list">
+<section id="meat-list" class="active">
     <h2>لطفا مواد گوشتی موجود در منزل را انتخاب کنید:</h2>
 
     <div>مرغ</div>
@@ -109,7 +109,7 @@
 </section>
 
 
-<section id="results-list" class="active">
+<section id="results-list">
     <header>
         <h2>مواد انتخاب شده:</h2>
         <ul id="selected-items">
@@ -144,10 +144,48 @@
             </li>
         </ul>
 
-
+        <label>چیزی از قلم افتاده؟ بنویس و اضافه کن:</label>
         <input type="text" id="add-items">
 
     </header>
+
+
+    <h2>فیلتر کردن نتایج</h2>
+
+    <aside id="filters">
+        <label>نوع غذا</label>
+        <select id="type">
+            <option selected>مهم نیست</option>
+            <option>مجلسی</option>
+            <option>دانشجویی</option>
+            <option>سبک</option>
+            <option>فست فود</option>
+            <option>ساندویچ</option>
+            <option>دسر</option>
+        </select>
+
+        <label>مدت زمان پخت</label>
+        <select id="time">
+            <option selected>مهم نیست</option>
+            <option>حداکثر نیم ساعت</option>
+            <option>حداکثر یک ساعت</option>
+            <option>حداکثر دو ساعت</option>
+        </select>
+
+        <label>اصالت غذا</label>
+        <select id="origin">
+            <option selected>مهم نیست</option>
+            <option>ایرانی</option>
+            <option>شمالی</option>
+            <option>جنوبی</option>
+            <option>عربی</option>
+            <option>اروپایی</option>
+            <option>آمریکایی</option>
+            <option>آسیایی</option>
+        </select>
+
+    </aside>
+
 
     <h2>پیشنهادهای وب آشپز:</h2>
 
@@ -201,39 +239,7 @@
         <p>ابتدا برنج را به تعداد افراد اندازه کرده و خیس میکنیم. سپس مرغ را شسته و پاک میکنیم...</p>
         <a class="more">ادامه</a>
     </article>
-
-    <aside id="filters">
-        <label>نوع غذا</label>
-        <select id="type">
-            <option selected>مهم نیست</option>
-            <option>مجلسی</option>
-            <option>دانشجویی</option>
-            <option>سبک</option>
-            <option>فست فود</option>
-            <option>ساندویچ</option>
-            <option>دسر</option>
-        </select>
-
-        <label>مدت زمان پخت</label>
-        <select id="time">
-            <option selected>مهم نیست</option>
-            <option>حداکثر نیم ساعت</option>
-            <option>حداکثر یک ساعت</option>
-            <option>حداکثر دو ساعت</option>
-        </select>
-
-        <label>اصالت غذا</label>
-        <select id="origin">
-            <option>ایرانی</option>
-            <option>شمالی</option>
-            <option>جنوبی</option>
-            <option>عربی</option>
-            <option>اروپایی</option>
-            <option>آمریکایی</option>
-            <option>آسیایی</option>
-        </select>
-
-    </aside>
+<footer></footer>
 </section>
 </div>
 </body>
