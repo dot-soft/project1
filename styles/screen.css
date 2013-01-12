@@ -41,13 +41,13 @@ article#about-web-ashpaz {
 header {
   background: #333333;
   color: white;
-  padding: 20px;
+  padding: 5px 10px 20px 20px;
   margin: 0;
-  height: 140px;
+  height: 110px;
   z-index: 2000; }
   header #logo {
     width: 120px;
-    height: 130px;
+    height: 120px;
     background: #199eec url("../images/logo.png") center right no-repeat;
     border: 1px white solid;
     float: right;
@@ -84,32 +84,39 @@ header {
       color: #b3b3b3; }
 
 aside#main-steps {
-  width: 150px;
+  width: 135px;
   position: absolute;
   right: 0;
   bottom: 0;
-  top: 180px;
-  background: #333333; }
+  top: 135px;
+  background: #333333;
+  padding-top: 30px; }
   aside#main-steps a {
     display: block;
-    width: 150px;
+    width: 135px;
     text-align: center;
-    color: white;
+    color: #b3b3b3;
     cursor: pointer;
     cursor: hand;
     margin-bottom: 10px;
-    padding: 15px 0; }
+    padding: 15px 0;
+    font-size: 18px; }
   aside#main-steps a#meat {
     background: brown; }
+  aside#main-steps a.current-step {
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 5px black;
+    border-right: 3px solid white; }
 
 section {
   position: absolute;
   top: 0;
   bottom: 0;
   left: -25px;
-  right: 150px;
+  right: 135px;
   padding: 60px;
-  padding-top: 160px;
+  padding-top: 130px;
   list-style-type: none;
   overflow-y: scroll;
   z-index: -100; }

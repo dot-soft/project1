@@ -1,8 +1,8 @@
 $blue: #199eec
-$header-height: 140px
+$header-height: 110px
 $headerBg: #333
 $about-height: 100px
-$steps-width: 150px
+$steps-width: 135px
 $meat: #a52a2a
 $bread: #d5b146
 $vegetables: #5fbf35
@@ -55,14 +55,14 @@ article#about-web-ashpaz
 header
   background: $headerBg
   color: #fff
-  padding: 20px
+  padding: 5px 10px 20px 20px
   margin: 0
   height: $header-height
   z-index: 2000
 
   #logo
     width: 120px
-    height: 130px
+    height: 120px
     background: $blue url("../images/logo.png") center right no-repeat
     border: 1px white solid
     float: right
@@ -109,21 +109,30 @@ aside#main-steps
   position: absolute
   right: 0
   bottom: 0
-  top: $header-height+40
+  top: $header-height+25
   background: $headerBg
+  padding-top: 30px
 
   a
     display: block
     width: $steps-width
     text-align: center
-    color: #fff
+    color: #b3b3b3
     cursor: pointer
     cursor: hand
     margin-bottom: 10px
     padding: 15px 0
+    font-size: 18px
 
   a#meat
     background: $meat
+
+  a.current-step
+    color: #fff
+    font-size: 24px
+    text-shadow: 2px 2px 5px #000
+    border-right: 3px solid #fff
+
 
 section
   position: absolute
