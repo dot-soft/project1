@@ -1,8 +1,8 @@
 $blue: #199eec
-$header-height: 110px
+$header-height: 104px
 $headerBg: #333
 $about-height: 100px
-$steps-width: 135px
+$steps-width: 128px
 $meat: #a52a2a
 $bread: #d5b146
 $vegetables: #5fbf35
@@ -55,7 +55,7 @@ article#about-web-ashpaz
 header
   background: $headerBg
   color: #fff
-  padding: 5px 10px 20px 20px
+  padding: 5px 5px 20px 20px
   margin: 0
   height: $header-height
   z-index: 2000
@@ -67,12 +67,14 @@ header
     border: 1px white solid
     float: right
     margin: 0
+    cursor: pointer
+    cursor: hand
 
     nav
       margin-right: 140px
       width: 700px
       margin-top: 57px
-      visibility: hidden
+      opacity: 0
 
       a
         display: inline-block
@@ -82,7 +84,7 @@ header
   a#navigation-slider
     display: block
     float: right
-    margin-top: 60px
+    margin-top: 55px
     content: ""
     width: 12px
     height: 15px
@@ -91,6 +93,22 @@ header
     cursor: pointer
     cursor: hand
     padding: 0
+
+  a#navigation-slide-back
+    display: none
+    float: right
+    margin-top: 55px
+    margin-right: -12px
+    content: ""
+    width: 14px
+    height: 15px
+    background-color: transparent
+    background-image: url("../images/right-arrow.png")
+    cursor: pointer
+    cursor: hand
+    padding: 0
+
+
 
   #title
     visibility: visible
