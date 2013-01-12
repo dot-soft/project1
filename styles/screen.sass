@@ -70,16 +70,24 @@ header
     cursor: pointer
     cursor: hand
 
-    nav
-      margin-right: 140px
+    nav#dot-soft-menu
+      background: $blue
+      border: 1px white solid
+      margin-right: 120px
+      padding: 5px
       width: 700px
-      margin-top: 57px
+      margin-top: 33px
       opacity: 0
 
       a
-        display: inline-block
-        width: 100px
+        display: inline
+        padding: 5px 8px 3px
+        margin: 0 0 0 12px
         text-align: center
+        font-size: 15px
+
+        &:hover
+          background: rgba(0,0,0,0.4)
 
   a#navigation-slider
     display: block
@@ -96,9 +104,8 @@ header
 
   a#navigation-slide-back
     display: none
-    float: right
-    margin-top: 55px
-    margin-right: -12px
+    margin-right: 821px
+    margin-top: -32px
     content: ""
     width: 14px
     height: 15px
@@ -111,7 +118,6 @@ header
 
 
   #title
-    visibility: visible
     padding-right: 200px
 
     h1
