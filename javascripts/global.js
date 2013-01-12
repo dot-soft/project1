@@ -8,7 +8,7 @@ jQuery(function($){
         results: '#a52a2a'
     };
 
-    $('#main').find('ul li').click(function(){
+    $('#wrapper').find('section div').click(function(){
         $(this).toggleClass('selected');
     });
 
@@ -36,13 +36,13 @@ jQuery(function($){
     }
 
     var toggleActiveList = function(step){
-        $('#main').find('ul li').addClass('opacity-zero');
-        $('#main').find('ul.active').removeClass();
-        $('#main').find('ul#' + step + '-list').addClass('active');
+        $('#wrapper').find('section div').addClass('opacity-zero');
+        $('#wrapper').find('section.active').removeClass();
+        $('#wrapper').find('section#' + step + '-list').addClass('active');
     }
 
     var fadeIngredients = function(step){
-        $('#main').find('ul#' + step + '-list li').fadeTo("slow", 1);
+        $('#wrapper').find('section#' + step + '-list div').fadeTo("slow", 1);
 
     }
 
